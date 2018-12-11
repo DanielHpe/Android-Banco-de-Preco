@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="ipead.com.br.newandroidbancodepreco.RotaActivity">
+
+    <ImageView
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_call_split_black_36dp"/>
+
+    <TextView
+        android:id="@+id/textNomeRota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="IdRota - NomeRota"
+        android:layout_marginRight="20dp"
+        android:paddingTop="15dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:layout_marginLeft="50dp"/>
+
+
+    <TextView
+        android:id="@+id/textIdPeriodoColeta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@+id/textNomeRota"
+        android:text="IdPeriodoColeta"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/textPeriodo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textNomeRota"
+        android:layout_marginRight="20dp"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_alignParentRight="true"
+        android:text="Periodo"
+        android:textSize="16dp" />
+
+
+    <TextView
+        android:id="@+id/textTipoRota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Tipo"
+        android:paddingBottom="15dp"
+        android:textSize="16dp"
+        android:layout_below="@+id/textIdPeriodoColeta"/>
+
+    <TextView
+        android:id="@+id/infoAbertos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:paddingBottom="15dp"
+        android:textSize="16dp"
+        android:text="Informantes Abertos"
+        android:layout_below="@+id/textIdPeriodoColeta" />
+
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        style="@style/LoginButton"
+        android:id="@+id/btnReabrirExcluirInformante"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="Reabrir/Excluir Informante"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_cadastrar_preco"/>
+
+    <Button
+        style="@style/LoginButton"
+        android:id="@+id/btnExcluirRota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Excluir Rota"
+        android:textSize="20dp"
+        android:layout_below="@+id/btnReabrirExcluirInformante"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_sem_preco"/>
+
+
+
+</RelativeLayout>

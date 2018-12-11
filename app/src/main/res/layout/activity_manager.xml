@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ipead.com.br.newandroidbancodepreco.ManagerActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff">
+
+            <TextView
+                android:id="@+id/habilitarStat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_centerHorizontal="true"
+                android:text="Estatística"
+                android:textSize="22dp" />
+
+            <android.widget.ToggleButton
+                style="@style/LoginButton"
+                android:id="@+id/toggle"
+                android:layout_height="wrap_content"
+                android:textOn="Habilitada"
+                android:textOff="Desabilitada"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/habilitarStat"
+                android:layout_marginTop="20dp"
+                android:layout_width="150dp"
+                android:background="@drawable/color_toggle_red" />
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/toggle"
+                android:layout_marginTop="20dp"
+                android:layout_height="0.1px"
+                android:background="@android:color/black" />
+
+            <TextView
+                android:id="@+id/habilitarHost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_below="@+id/view1"
+                android:text="Host de Conexão"
+                android:textSize="22dp" />
+
+            <TextView
+                android:id="@+id/nomeConexaoAtual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/habilitarHost"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_marginTop="15dp"
+                android:text="Defina o host de conexão do sistema"
+                android:textSize="18dp" />
+
+
+            <Button
+                style="@style/LoginButton"
+                android:id="@+id/adicionarHost"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:textSize="14dp"
+                android:text="Hosts"
+                android:background="@drawable/button_sem_preco"
+                android:layout_below="@+id/nomeConexaoAtual" />
+
+            <Button
+                style="@style/LoginButton"
+                android:id="@+id/infosActivity"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_alignParentRight="true"
+                android:textSize="14dp"
+                android:text="Info Conexão"
+                android:background="@drawable/button_info"
+                android:layout_below="@+id/nomeConexaoAtual" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_above="@+id/habilitarCertificado"
+                android:layout_marginBottom="-20dp"
+                android:layout_height="0.1px"
+                android:background="@android:color/black" />
+
+
+            <TextView
+                android:id="@+id/habilitarCertificado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_below="@+id/adicionarHost"
+                android:text="Certificado"
+                android:textSize="22dp" />
+
+            <android.widget.ToggleButton
+                style="@style/LoginButton"
+                android:id="@+id/toggleCertificado"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:textOn="Http"
+                android:textOff="Https"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/habilitarCertificado"
+                android:layout_width="150dp"
+                android:background="@drawable/color_toggle_green"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_below="@+id/toggleCertificado"
+                android:layout_marginTop="30dp"
+                android:layout_height="0.1px"
+                android:background="@android:color/black" />
+
+            <TextView
+                android:id="@+id/habilitarCaminho"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="110dp"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/habilitarCertificado"
+                android:text="Caminho de Dados"
+                android:textSize="22dp" />
+
+            <TextView
+                android:id="@+id/path"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="18dp"
+                android:layout_below="@+id/habilitarCaminho"
+                android:text="Path: "
+                android:layout_marginTop="35dp"
+                android:layout_marginLeft="40dp"/>
+
+            <Button
+                android:id="@+id/buttonPath"
+                style="@style/pathButton"
+                android:layout_width="252dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/habilitarCaminho"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="42dp"
+                android:layout_toRightOf="@+id/path"
+                android:background="@drawable/button_sem_preco"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="Alterar Caminho" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_below="@+id/buttonPath"
+                android:layout_marginTop="30dp"
+                android:layout_height="0.1px"
+                android:background="@android:color/black" />
+
+            <TextView
+                android:id="@+id/gpsTracker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="50dp"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/buttonPath"
+                android:text="GPS (Notificação)"
+                android:textSize="22dp" />
+
+            <Switch
+                android:id="@+id/gpsSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gpsTracker"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_below="@+id/gpsSwitch"
+                android:layout_marginTop="30dp"
+                android:layout_height="0.1px"
+                android:background="@android:color/black" />
+
+            <TextView
+                android:id="@+id/distanciaValor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="50dp"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/gpsSwitch"
+                android:text="Distância Limite Pop-Up"
+                android:textSize="22dp" />
+
+            <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="358dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/distanciaValor"
+                android:layout_marginBottom="0dp"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                app:dsb_max="5000"
+                app:dsb_min="0"
+                app:dsb_value="0" />
+
+            <TextView
+                android:id="@+id/seekBarMin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Min: 0"
+                android:layout_below="@+id/seekBar"
+                android:layout_marginLeft="20dp"
+                android:textSize="16dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="0dp"/>
+
+            <TextView
+                android:id="@+id/seekBarMax"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/seekBar"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:text="Max: 5000"
+                android:textSize="16dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="0dp"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

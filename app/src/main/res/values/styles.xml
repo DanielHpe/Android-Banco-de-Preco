@@ -1,0 +1,84 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="actionBarSize">35dp</item>
+    </style>
+
+    <style name="LoginViewPosition" parent="AppTheme">
+        <item name="android:layout_marginTop">40dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+    </style>
+
+    <style name="CalendarButton" parent="Theme.AppCompat.Light">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="LoginButton" parent="Theme.AppCompat.Light">
+        <item name="android:layout_marginTop">40dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="pathButton" parent="Theme.AppCompat.Light">
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:layout_marginLeft">30dp</item>
+        <item name="android:layout_marginRight">30dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="AlertInformante" parent="Theme.AppCompat.Light">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="SemPrecoButton" parent="Theme.AppCompat.Light">
+        <item name="android:layout_marginTop">40dp</item>
+        <item name="android:layout_marginLeft">60dp</item>
+        <item name="android:layout_marginRight">40dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="EstaCorreto" parent="Theme.AppCompat.Light">
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginLeft">30dip</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="EstaIncorreto" parent="Theme.AppCompat.Light">
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">30dip</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="InfoSyncButtonMargin" parent="AppTheme">
+        <item name="android:layout_marginTop">40dp</item>
+    </style>
+
+    <style name="InfoLargeText" parent="TextAppearance.AppCompat.Large">
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+    </style>
+
+    <style name="GridViewPosition" parent="AppTheme">
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

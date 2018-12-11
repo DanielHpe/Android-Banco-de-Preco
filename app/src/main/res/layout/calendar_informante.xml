@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="20dp">
+
+
+    <DatePicker
+        android:id="@+id/datePickerValidade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/checkValidade" />
+
+    <CheckBox
+        android:id="@+id/checkValidade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+
+        android:text="Sem Validade"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        style="@style/CalendarButton"
+        android:id="@+id/btnSalvarValidade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Finalizar"
+        android:layout_below="@+id/datePickerValidade"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/button_calendar"/>
+
+
+</RelativeLayout>

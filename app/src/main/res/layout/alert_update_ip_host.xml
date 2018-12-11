@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/nomeHostAlert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22dp"
+        android:text="Atualizar Host"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="#fff"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:background="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/digiteIPhost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nomeHostAlert"
+        android:textSize="22dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Digite o novo IP de Host:"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp" />
+
+    <EditText
+        android:id="@+id/editIPHostUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/digiteIPhost"
+        android:layout_marginTop="5dp"
+        android:background="#fff"
+        android:hint="(Somente o IP ou host)"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <Button
+        style="@style/AlertInformante"
+        android:id="@+id/btnCloseHostUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Close"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:textSize="18dp"
+        android:layout_marginBottom="10dp"
+        android:background="@android:color/transparent"
+        android:layout_below="@+id/editIPHostUpdate"/>
+
+    <Button
+        style="@style/AlertInformante"
+        android:id="@+id/btnAttHost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Att Host"
+        android:layout_toLeftOf="@+id/btnCloseHostUpdate"
+        android:textSize="18dp"
+        android:layout_marginBottom="10dp"
+        android:background="@android:color/transparent"
+        android:layout_below="@+id/editIPHostUpdate"/>
+
+</RelativeLayout>

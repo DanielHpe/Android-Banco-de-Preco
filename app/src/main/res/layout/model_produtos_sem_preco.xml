@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <CheckedTextView
+        android:id="@+id/txtNomeProdutoSemPreco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="50dp"
+        android:fontFamily="sans-serif-condensed"
+        android:textAllCaps="true"
+        android:text="TextView"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/txtTipoProdutoSemPreco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtNomeProdutoSemPreco"
+        android:textAllCaps="true"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_marginLeft="10dp"
+        android:text="TextView"
+        android:textSize="16dp" />
+
+
+    <CheckBox
+        android:id="@+id/checkboxItemsSemPreco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

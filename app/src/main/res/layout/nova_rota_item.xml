@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/novaRotaItemLayout">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/lblTituloDownload"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:text="Titulo"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:textSize="22dp"/>
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/lblTituloDownload"
+                android:layout_marginTop="20dp"
+                android:layout_height="0.1px"
+                android:background="@android:color/black" />
+
+
+            <TextView
+                android:id="@+id/lblRota"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="rota"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="18dp"
+                android:textColor="#000"
+                android:layout_marginTop="70dp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/lblNomeRota"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="DescricaoRota"
+                android:layout_below="@+id/lblRota"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="18dp"
+                android:textColor="#000"
+                android:layout_marginTop="@dimen/margin_elements"/>
+
+            <TextView
+                android:id="@+id/lblTipoRota"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_below="@+id/lblNomeRota"
+                android:text="Tipo Rota"
+                android:textSize="18dp"
+                android:textColor="#000"
+                android:layout_marginTop="@dimen/margin_elements">
+            </TextView>
+
+            <TextView
+                android:id="@+id/lblColetor"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_below="@+id/lblTipoRota"
+                android:text="ID Coletor"
+                android:textSize="18dp"
+                android:textColor="#000"
+                android:layout_marginTop="@dimen/margin_elements">
+            </TextView>
+
+            <TextView
+                android:id="@+id/lblNomeUsuarioColetor"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_below="@+id/lblColetor"
+                android:text="Nome coletor"
+                android:textSize="18dp"
+                android:textColor="#000"
+                android:layout_marginTop="@dimen/margin_elements">
+            </TextView>
+
+            <TextView
+                android:id="@+id/lblIdPeriodoColeta"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_below="@+id/lblNomeUsuarioColetor"
+                android:text="Id Periodo Coleta"
+                android:textSize="18dp"
+                android:textColor="#000"
+                android:layout_marginTop="@dimen/margin_elements">
+            </TextView>
+
+            <TextView
+                android:id="@+id/lblPeriodo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="periodo"
+                android:layout_below="@+id/lblIdPeriodoColeta"
+                android:textSize="18dp"
+                android:textColor="#000"
+                android:layout_marginTop="@dimen/margin_elements">
+            </TextView>
+
+            <TextView
+                android:id="@+id/lblData"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_below="@+id/lblPeriodo"
+                android:layout_marginTop="@dimen/margin_elements"
+                android:text="data"
+                android:textSize="18dp"
+                android:textColor="#000">
+            </TextView>
+
+            <Button
+                android:id="@+id/btnReceber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:drawableRight="@drawable/ic_assignment_returned_36dp"
+                android:minHeight="45dp"
+                android:text="Baixar Rota "
+                android:fontFamily="sans-serif-condensed"
+                android:layout_below="@+id/lblData"
+                android:textSize="18dp"
+                android:textColor="#000"
+                android:background="@drawable/button_download"
+                android:layout_gravity="center_horizontal"
+                android:padding="@dimen/appbar_padding_top">
+            </Button>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <TextView
+        android:id="@+id/opcoes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22dp"
+        android:text="Opções"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="#fff"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:background="@color/colorPrimary" />
+
+    <Button
+        style="@style/AlertInformante"
+        android:id="@+id/btnVerDetalhes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Ver Detalhes"
+        android:textSize="18dp"
+        android:layout_below="@+id/opcoes"
+        android:background="@drawable/textline"/>
+
+    <Button
+        style="@style/AlertInformante"
+        android:id="@+id/btnFecharInformante"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fechar Informante"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_below="@+id/btnVerDetalhes"
+        android:textSize="18dp"
+        android:background="#fff"/>
+
+
+
+</RelativeLayout>

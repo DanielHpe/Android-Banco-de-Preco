@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        style="@style/InfoLargeText"
+        android:id="@+id/lblInfoVersaoField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="18dp"
+        android:text="Versão: " />
+
+    <TextView
+        style="@style/InfoLargeText"
+        android:id="@+id/lblInfoVersaoValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="18dp"
+        android:layout_toRightOf="@id/lblInfoVersaoField"
+        android:text="1.0" />
+
+    <TextView
+        style="@style/InfoLargeText"
+        android:id="@+id/lblInfoConStatusField"
+        android:layout_width="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="18dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblInfoVersaoField"
+        android:text="Status Conexão: " />
+
+    <TextView
+        style="@style/InfoLargeText"
+        android:id="@+id/lblInfoConStatusValue"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblInfoVersaoField"
+        android:layout_toRightOf="@id/lblInfoConStatusField"
+        android:text="Offline" />
+
+    <TextView
+        style="@style/InfoLargeText"
+        android:id="@+id/lblInfoHostField"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblInfoConStatusField"
+        android:text="Host: " />
+
+    <TextView
+        style="@style/InfoLargeText"
+        android:id="@+id/lblInfoHostValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="18dp"
+        android:layout_below="@id/lblInfoConStatusField"
+        android:layout_toRightOf="@id/lblInfoHostField"
+        android:text="Desenvolvimento" />
+
+    <Button
+        android:id="@+id/btnAtualizarInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Atualizar "
+        android:drawableRight="@drawable/ic_autorenew_black_24dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/black"/>
+</RelativeLayout>
+

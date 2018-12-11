@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ipead.com.br.newandroidbancodepreco">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:icon="@mipmap/icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".InfoActivity"
+            android:configChanges="orientation"
+            android:label="Informação Gerais"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainMenuActivity"
+            android:configChanges="orientation"
+            android:label="Menu Principal"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RotaActivity"
+            android:configChanges="orientation"
+            android:label="Rotas"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AdminMenuActivity"
+            android:configChanges="orientation"
+            android:label="Área do Gerente"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".InformanteActivity"
+            android:configChanges="orientation"
+            android:label="Informantes"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GrupoActivity"
+            android:configChanges="orientation"
+            android:label="Grupos"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProdutoActivity"
+            android:configChanges="orientation"
+            android:label="Produtos"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MarcaActivity"
+            android:configChanges="orientation"
+            android:label="Marcas"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ColetaActivity"
+            android:configChanges="orientation"
+            android:label="Coleta"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ReabrirActivity"
+            android:configChanges="orientation"
+            android:label="Informantes Fechados"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ManagerActivity"
+            android:configChanges="orientation"
+            android:label="Área do Administrador"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SwipeActivity"
+            android:configChanges="orientation"
+            android:label="Rotas do Dispositivo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DownloadRotaActivity"
+            android:configChanges="orientation"
+            android:label="Rotas para Download"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ExcluirRotaActivity"
+            android:configChanges="orientation"
+            android:label="Excluir Rota"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HostActivity"
+            android:configChanges="orientation"
+            android:label="Hosts"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PathActivity"
+            android:configChanges="orientation"
+            android:label="Caminho do Sistema"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AsyncTaskActivity"
+            android:configChanges="orientation"
+            android:label="Download"
+            android:screenOrientation="portrait"/>
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:label="Mapa de Informantes"></activity>
+    </application>
+
+</manifest>

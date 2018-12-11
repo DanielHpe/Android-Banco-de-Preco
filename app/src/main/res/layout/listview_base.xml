@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/listTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="22dp"
+        android:gravity="center_horizontal"
+        android:text="titulo"
+        android:layout_marginBottom="20dp"/>
+
+    <!--<ImageView-->
+        <!--android:id="@+id/arrow"-->
+        <!--android:layout_width="24dp"-->
+        <!--android:layout_height="24dp"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--android:background="@drawable/ic_arrow_forward_24dp" />-->
+
+    <!--<ImageView-->
+        <!--android:id="@+id/arrowLeft"-->
+        <!--android:layout_width="24dp"-->
+        <!--android:layout_height="24dp"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--android:background="@drawable/ic_arrow_back_24dp" />-->
+
+    <ListView
+        android:id="@id/android:list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:id="@id/android:empty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center_horizontal"
+        android:textSize="18sp"
+        android:text="Nenhum dado encontrado!"
+        android:textColor="#b0151f"/>
+
+</RelativeLayout>

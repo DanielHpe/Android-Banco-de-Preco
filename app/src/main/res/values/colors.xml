@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2db6f0</color>
+    <color name="colorPrimaryDark">#029dc4</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="btnPrimary">#337ab7</color>
+    <color name="btnPrimaryBorder">#2e6da4</color>
+    <color name="btnPrimaryFocused">#286090</color>
+    <color name="btnPrimaryFocusedBorder">#122b40</color>
+    <color name="btnPrimaryPressedBorder">#204d74</color>
+    <color name="white">#FFFFFF</color>
+    <color name="lightGray">#EEEEEE</color>
+    <color name="black">#000000</color>
+    <color name="naturalGreen">#388E3C</color>
+    <color name="violet">#303F9F</color>
+
+    <color name="btnDarkPrimaryColor">#9E9E9E</color>
+    <color name="btnAccentColor">#757575</color>
+
+    <color name="btnSimDesejoColor">#0288D1</color>
+    <color name="btnNaoDesejoColor">#F44336</color>
+
+    <color name="btnCalendar">#C2185B</color>
+
+
+</resources>

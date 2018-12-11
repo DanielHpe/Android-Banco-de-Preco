@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:adjustViewBounds="false"
+                android:background="@drawable/logo" />
+
+            <EditText
+                android:id="@+id/txtLogin"
+                style="@style/LoginViewPosition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="120dp"
+                android:ems="10"
+                android:hint="Login..."
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/txtSenha"
+                style="@style/LoginViewPosition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtLogin"
+                android:ems="10"
+                android:hint="Senha..."
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/btnLogin"
+                style="@style/LoginButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtSenha"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/button_login"
+                android:text="Entrar" />
+
+            <ImageButton
+                android:id="@+id/imgBtnInfo"
+                style="@style/InfoSyncButtonMargin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/btnLogin"
+                android:layout_alignStart="@+id/btnLogin"
+                android:layout_below="@+id/btnLogin"
+                app:srcCompat="@drawable/ic_info_outline_black_24dp" />
+
+            <ImageButton
+                android:id="@+id/imgBtnSync"
+                style="@style/InfoSyncButtonMargin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/btnLogin"
+                android:layout_alignRight="@+id/btnLogin"
+                android:layout_below="@+id/btnLogin"
+                app:srcCompat="@drawable/ic_autorenew_black_24dp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgBtnSync"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/box_shadow"
+                android:elevation="8dp">
+
+                <TextView
+                    android:id="@+id/txtUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text=""
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/currentUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtUser"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text=""
+                    android:textSize="18dp" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

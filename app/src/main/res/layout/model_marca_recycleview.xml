@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_label_black_36dp"/>
+
+    <TextView
+        android:id="@+id/txtMarca1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:paddingTop="15dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="TextView"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/txtMarca2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtMarca1"
+        android:fontFamily="sans-serif-condensed"
+        android:paddingBottom="15dp"
+        android:layout_marginLeft="50dp"
+        android:text="TextView"
+        android:textSize="16dp" />
+
+
+</RelativeLayout>

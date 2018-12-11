@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rotaItemLayout"
+    android:layout_marginBottom="@dimen/activity_horizontal_margin">
+
+    <TextView
+        android:id="@+id/lblTituloRota"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="Titulo"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_marginTop="20dp"
+        android:textSize="22dp"/>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/lblTituloRota"
+        android:layout_marginTop="20dp"
+        android:layout_height="0.1px"
+        android:background="@android:color/black" />
+
+    <TextView
+        android:id="@id/lblRota"
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ID Rota"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="#000"
+        android:textSize="18dp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/lblRotaDescricao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblRota"
+        android:text="Rota Descricao"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="#000"
+        android:textSize="18dp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/lblTipoRota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblRotaDescricao"
+        android:text="Tipo Rota"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="#000"
+        android:textSize="18dp">
+
+    </TextView>
+
+    <TextView
+
+        android:id="@id/lblColetor"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/lblTipoRota"
+        android:fontFamily="sans-serif-condensed"
+        android:text="ID Usuario"
+        android:textSize="18dp"
+        android:textColor="#000">
+
+    </TextView>
+
+    <TextView
+
+        android:id="@+id/lblNomeColetor"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/lblColetor"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Usuario"
+        android:textSize="18dp"
+        android:textColor="#000">
+
+    </TextView>
+
+    <TextView
+        android:id="@id/lblPeriodo"
+        android:layout_width="fill_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblNomeColetor"
+        android:layout_toRightOf="@+id/textPeriodo"
+        android:text="periodo"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="18dp"
+        android:textColor="#000">
+    </TextView>
+
+    <TextView
+        android:id="@+id/lblInformantes"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_below="@+id/lblPeriodo"
+        android:paddingBottom="50dp"
+        android:text="informantes abertos"
+        android:textSize="18dp"
+        android:textColor="#000">
+    </TextView>
+
+</RelativeLayout>

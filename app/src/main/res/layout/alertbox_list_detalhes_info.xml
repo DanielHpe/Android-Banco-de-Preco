@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="500dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff">
+
+            <TextView
+                android:id="@+id/informacoesInformante"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="22dp"
+                android:text="Informações do Informante"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="#fff"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:background="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/infosIdInformante"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_below="@+id/informacoesInformante"
+                android:gravity="start"
+                android:textSize="20dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Id Informante: "/>
+
+            <TextView
+                android:id="@+id/infosNomeInformante"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="start"
+                android:textSize="20dp"
+                android:layout_below="@+id/infosIdInformante"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Nome Informante: "/>
+
+            <TextView
+                android:id="@+id/infosEnderecoInformante"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_below="@+id/infosNomeInformante"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Endereço Informante: "/>
+
+            <TextView
+                android:id="@+id/infosContatoInformante"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_below="@+id/infosEnderecoInformante"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Contato Informante: "/>
+
+            <TextView
+                android:id="@+id/infosTelefoneInformante"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_below="@+id/infosContatoInformante"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Telefone Informante: "/>
+
+            <TextView
+                android:id="@+id/infosTransporteInformante"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/infosTelefoneInformante"
+                android:textSize="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Transporte Informante: "/>
+
+            <TextView
+                android:id="@+id/infosOrcamentoInformante"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textSize="20dp"
+                android:layout_below="@+id/infosTransporteInformante"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Orcamento Informante: "/>
+
+            <TextView
+                android:id="@+id/infosObservacaoInformante"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/infosOrcamentoInformante"
+                android:textSize="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Observacao Informante: "/>
+
+            <TextView
+                android:id="@+id/infosTipoInformante"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/infosObservacaoInformante"
+                android:textSize="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Tipo Informante: "/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:paddingBottom="10dp"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp">
+
+    <ImageView
+        android:id="@+id/helpImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_help_outline_black_48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/desejaColocar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/helpImage"
+        android:textSize="16dp"
+        android:text="Deseja realmente colocar este produto como SEM PREÇO?"
+        android:gravity="center_horizontal"/>
+
+    <Button
+        android:id="@+id/btnSimDesejo"
+        style="@style/EstaCorreto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/desejaColocar"
+        android:text="Sim"
+        android:background="@drawable/button_desejo_sem_prec"/>
+
+    <Button
+        android:id="@+id/btnNaoDesejo"
+        style="@style/EstaIncorreto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/desejaColocar"
+        android:text="Não"
+        android:background="@drawable/button_nao_desejo_prec"/>
+
+</RelativeLayout>

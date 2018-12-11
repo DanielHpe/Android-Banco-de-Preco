@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PathActivity">
+
+    <TextView
+        android:id="@+id/textCaminhoSistema"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:textSize="22dp"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_centerHorizontal="true"
+        android:text="Digite o novo caminho do sistema"/>
+
+    <EditText
+        android:id="@+id/editCaminhoSistema"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Aperte o botão para caminho padrão"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_below="@+id/textCaminhoSistema"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <Button
+        style="@style/LoginButton"
+        android:layout_below="@+id/editCaminhoSistema"
+        android:id="@+id/btnCaminhoSistema"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Definir Diretórios"
+        android:background="@drawable/button_sem_preco"/>
+
+    <TextView
+        android:id="@+id/textViewCurrentPath"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnCaminhoSistema"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:text="Caminho Interno:"/>
+
+    <TextView
+        android:id="@+id/currentPath"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewCurrentPath"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="16dp"
+        android:text="abc"/>
+
+    <ImageView
+        android:id="@+id/imageButton"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_below="@+id/btnCaminhoSistema"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/ic_assignment_black_48dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_below="@+id/currentPath"
+        android:layout_marginTop="15dp"
+        android:layout_height="0.1px"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@android:color/black" />
+
+    <TextView
+        android:id="@+id/textViewCurrentSdPath"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/currentPath"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:text="Caminho Externo:"/>
+
+    <TextView
+        android:id="@+id/currentSdPath"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewCurrentSdPath"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="16dp"
+        android:text="SdCard/Path/Teste"/>
+
+    <ImageView
+        android:id="@+id/imageButtonSd"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_below="@+id/imageButton"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/ic_assignment_black_48dp"/>
+
+
+
+
+</RelativeLayout>
